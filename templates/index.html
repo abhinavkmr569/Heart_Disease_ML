@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Disease Predictor</title>
+  <style>
+
+	html {
+  			scroll-behavior: smooth;
+ 	}
+ 
+	fieldset {
+  			background-color: #ffffff;
+  			font-family: montserrat;
+	}
+		
+	legend {
+  			background-color: gray;
+  			color: white;
+  			padding: 5px 10px;
+	}
+
+	input {
+  			margin: 5px;
+  			font-family: montserrat
+	}
+
+	
+
+	header{
+			
+		    background-color: #ff4339;
+		    padding: 5px;
+		    text-align: center;
+		    font-size: 25px;
+		    color: white;
+    }
+		
+    ul {
+  			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #333;
+	}
+
+	li {
+  			float: left;
+	}
+
+	li a {
+		  	display: block;
+		  	color: white;
+		  	text-align: center;
+		  	padding: 14px 16px;
+		  	text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+  			background-color: #413d3d;
+  			font-family: montserrat
+	}	
+
+	.active {
+  			background-color: #b80f0f;
+	}
+	
+	#Home {
+  			padding-bottom: 0.5%;
+  			
+	} 
+		
+
+	#about{
+			padding-bottom: 0.5%;
+	}
+
+</style>
+</head> 
+
+
+
+<body style="background-color:#333;">
+
+ <div class="login">
+ 	<header>
+		<h1 style = "font-family:Montserrat;text-align: center">Heart Disease Predictor</h1>
+	</header>
+</div>
+
+<div>
+	<ul>
+  		<li><a class="active" href="#Home" style = "font-family: montserrat;" target="_blank">Home</a></li>
+  	
+  		<li><a href="#about" style = "font-family: montserrat;">About</a></li>
+	</ul>
+</div>
+
+<br>
+
+     <!-- Main Input For Receiving Query to our ML -->
+<div style="background-color:#333333; color:white; text-align:center; font-family: montserrat ;">
+	<br>
+		If you ever had a chest pain and wondered if it could be serious or not, then this test can help predict whether the pain was severe or not 
+	<br>
+</div>
+
+<div id = "Home">
+    <form action="{{ url_for('predict')}}"method="post" >
+      <br>
+      <fieldset style = "background-color: #ffffff; font-family: montserrat" >
+
+      	<legend style="background-color:#333333;font-family: montserrat;">Enter the details:</legend>
+
+      <br>Enter Your Age:<br>
+      <input type="text" name="age" placeholder="Enter your Age" required="required" />
+      
+      <br>
+      
+      <br>Enter Your Sex: (1 for Male, 0 for Female) <br>
+      <input type="text" name="sex" placeholder="Enter your Sex" required="required" />
+
+      <br>
+
+      <br>Enter Your Chest Pain Level: (1 = typical angina ; 2 = atypical angina ; 3 = non-anginal pain ; 4 = asymptomatic)<br>
+      <input type="text" name="cp" placeholder="Enter CP in number" required="required" />
+
+      <br>
+
+      <br>Enter Your Resting Blood Pressure (in mm Hg on admission to the hospital) (eg: 140mm/Hg) <br>
+      <input type="text" name="trestbps" placeholder="Enter trestbps in number" required="required" />
+      
+      <br>
+
+      <br>Enter Your Serum Cholestoral in mg/dl (eg: 289mg/dl) <br>
+      <input type="text" name="chol" placeholder="chol" required="required" />
+      
+      <br>
+
+      <br>Enter Your Fasting Blood Sugar: (If it is > 120 mg/dl, Enter 1 = TRUE; 0 = FALSE)<br>
+      <input type="text" name="fbs" placeholder="fbs" required="required" />
+      
+      <br>
+
+      <br>Enter Your Resting Electrocardiographic Results: (0-normal, 1-having ST-T, 2-hypertrophy)<br>
+      <input type="text" name="restecg" placeholder="restecg" required="required" />
+	
+	  <br>
+
+	  <br>Enter the Maximum Heart Rate achieved: (in Beats per Minute)<br>
+	  <input type="text" name="thalach" placeholder="thalach" required="required" />
+
+	  <br>
+
+	  <br>Is it Exercise induced angina (1 = yes; 0 = no):<br>
+      <input type="text" name="exang" placeholder="exang" required="required" />
+
+      <br>
+
+      <br>ST depression induced by exercise relative to rest: (eg: 4.2) <br>
+      <input type="text" name="oldpeak" placeholder="oldpeak" required="required" />
+
+      <br>
+
+      <br>Enter the value of the slope of the peak exercise ST segment: (1-upsloping, 2-flat, 3-downsloping)<br>
+      <input type="text" name="slope" placeholder="slope" required="required" />
+
+      <br>
+
+      <br>Number of major vessels colored by flourosopy: ( 0 - 3 vessels)<br>
+      <input type="text" name="ca" placeholder="ca" required="required" />
+
+      <br>
+
+      <br>Thalassemia ( 3-normal, 6-fixed defect, 7-reversable defect ):<br> 
+      <input type="text" name="thal" placeholder="thal" required="required" />
+
+      <br><br>
+      <button type="submit" class="btn btn-primary btn-block btn-large" style = "font-family: montserrat;">Predict</button>
+    </fieldset>
+    </form>
+ 
+ </div>
+
+<div class="main" id="about" >
+	<h2 style = "font-family: montserrat;color: white;">About</h2>
+
+    <fieldset style = "background-color: #ffffff; font-family: montserrat" >
+
+  	<p>This Predictor is based on a Classification Model whose dataset is centered on cleveland.csv containing about 303 patients data including both the kinds, cardiac and non-cardiac patients. This model is created using Support Vector Machine Classifier which upon evalulating gave 90% accuracy on test set.
+  	</p>
+  	<p><br>
+  		<h3>Vision: </h3></p>
+  		<p><strong>"Heart diseases are the major cause for human mortality rate. Correct diagnosis and treatment at an early stage will save people from heart disease and will decrease mortality rate due to heart problem." -</strong> [As quoted by S.Chellammal and R. Sharmila in "Recommendation of Attributes for Heart Disease Prediction using Correlation Measure" International Journal of Recent Technology and Engineering (IJRTE)
+ISSN: 2277-3878, Volume-8, Issue-2S3, July 2019] 
+  </p>
+  
+
+ <p>This highly inspired me to design a state of art technology that helps eradicate the various misconceptions of having to believe every illness would result in a deadly disease. </p>
+
+<p>It’s become a trend to end up checking your Health status over internet which only ends up giving you false results and unnecessary stress. </p>
+
+<p>With this predictor, we are looking forward to helping out people rule out their doubts regarding heart diseases which is backed by strong data base which promises to not stress you out.
+  	</p>
+
+    </fieldset>
+
+
+</div>
+
+
+
+
+
+</body>
+</html>
