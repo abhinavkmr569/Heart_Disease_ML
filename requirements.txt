@@ -1,9 +1,8 @@
-daft==0.0.4
-dask==2.12.0
+
 dataclasses==0.7
 datascience==0.10.6
 decorator==4.4.2
-distributed==1.25.3
+
 docutils==0.15.2
 
 
@@ -11,10 +10,7 @@ Flask==1.1.2
 flask-ngrok==0.0.25
 
 
-geographiclib==1.50
-geopy==1.17.0
-gin-config==0.3.0
-glob2==0.7
+
 google==2.0.3
 google-api-core==1.16.0
 google-api-python-client==1.7.12
@@ -32,51 +28,10 @@ google-colab==1.0.0
 google-pasta==0.2.0
 google-resumable-media==0.4.1
 googleapis-common-protos==1.52.0
-googledrivedownloader==0.4
-graphviz==0.10.1
-grpcio==1.29.0
-gspread==3.0.1
-gspread-dataframe==3.0.7
-gym==0.17.2
 
-h5py==2.10.0
-HeapDict==1.0.1
-holidays==0.9.12
-html5lib==1.0.1
-httpimport==0.5.18
-httplib2>=0.18.0
-httplib2shim==0.0.3
-humanize==0.5.1
-hyperopt==0.1.2
-ideep4py==2.0.0.post3
-idna==2.9
-image==1.5.32
-imageio==2.4.1
-imagesize==1.2.0
-imbalanced-learn==0.4.3
-imblearn==0.0
-imgaug==0.2.9
-importlib-metadata==1.6.0
-imutils==0.5.3
-inflect==2.1.0
-intel-openmp==2020.0.133
-intervaltree==2.1.0
-ipykernel==4.10.1
-ipython==5.5.0
-ipython-genutils==0.2.0
-ipython-sql==0.3.9
-ipywidgets==7.5.1
-itsdangerous==1.1.0
-jax==0.1.69
-jaxlib==0.1.47
-jdcal==1.4.1
-jedi==0.17.0
-jieba==0.42.1
+
 Jinja2==2.11.2
-jmespath==0.10.0
-joblib==0.15.1
-jpeg4py==0.1.4
-jsonschema==2.6.0
+
 jupyter==1.0.0
 jupyter-client==5.3.4
 jupyter-console==5.2.0
@@ -92,13 +47,11 @@ np-utils==0.5.12.1
 numba==0.48.0
 numexpr==2.7.1
 numpy==1.18.5
-nvidia-ml-py3==7.352.0
+
 oauth2client==4.1.3
 oauthlib==3.1.0
 okgrade==0.4.3
 
-packaging==20.4
-palettable==3.3.0
 pandas==1.0.4
 pandas-datareader==0.8.1
 pandas-gbq==0.11.0
@@ -117,21 +70,11 @@ plotnine==0.6.0
 pluggy==0.7.1
 portpicker==1.3.1
 prefetch-generator==1.0.1
-preshed==3.0.2
-prettytable==0.7.2
-progressbar2==3.38.0
-prometheus-client==0.8.0
-promise==2.3
-prompt-toolkit==1.0.18
-protobuf==3.10.0
+
 psutil>=5.6.6
 psycopg2==2.7.6.1
 ptyprocess==0.6.0
 py==1.8.1
-pyarrow==0.14.1
-pyasn1==0.4.8
-pyasn1-modules==0.2.8
-pycparser==2.20
 pydata-google-auth==1.1.0
 
 PyDrive==1.3.1
@@ -145,10 +88,10 @@ pytest==3.6.4
 
 PyWavelets==1.1.1
 pyyaml>=4.2b1
-pyzmq==19.0.1
+
 qtconsole==4.7.4
 QtPy==1.9.0
-regex==2019.12.20
+
 requests==2.23.0
 requests-oauthlib==1.3.0
 resampy==0.2.2
@@ -170,13 +113,10 @@ sklearn-pandas==1.8.0
 
 SQLAlchemy==1.3.17
 sqlparse==0.3.1
-srsly==1.0.2
+
 statsmodels==0.10.2
 sympy==1.1.1
 tables==3.4.4
-tabulate==0.8.7
-tbb==2020.0.133
-tblib==1.6.0
 
 
 webencodings==0.5.1
