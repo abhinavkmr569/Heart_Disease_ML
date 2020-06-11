@@ -1,5 +1,5 @@
 # Predicting Heart Disease using Machine Learning
-A prediction model that can predict whether are you prone to any heart disease or not
+A prediction model that can predict whether are you prone to any heart disease or not.
 This Predictor is based on a Classification Model whose dataset is centered on cleveland.csv containing about 303 patients data including both the kinds, cardiac and non-cardiac patients. This model is created using Support Vector Machine Classifier which upon evalulation gave 90% accuracy on test set.
 
 
