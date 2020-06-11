@@ -4,7 +4,8 @@ This Predictor is based on a Classification Model whose dataset is centered on c
 
 
 ## Vision:
-### "Heart diseases are the major cause for human mortality rate. Correct diagnosis and treatment at an early stage will save people from heart disease and will decrease mortality rate due to heart problem." -#### [As quoted by S.Chellammal and R. Sharmila in "Recommendation of Attributes for Heart Disease Prediction using Correlation Measure" International Journal of Recent Technology and Engineering (IJRTE) ISSN: 2277-3878, Volume-8, Issue-2S3, July 2019]
+### "Heart diseases are the major cause for human mortality rate. Correct diagnosis and treatment at an early stage will save people from heart disease and will decrease mortality rate due to heart problem." - 
+[As quoted by S.Chellammal and R. Sharmila in "Recommendation of Attributes for Heart Disease Prediction using Correlation Measure" International Journal of Recent Technology and Engineering (IJRTE) ISSN: 2277-3878, Volume-8, Issue-2S3, July 2019]
 
 This highly inspired me to design a state of art technology that helps eradicate the various misconceptions of having to believe every illness would result in a deadly disease.
 
