@@ -21,7 +21,7 @@ matplotlib-venn==0.11.5
 
 notebook>=5.7.8
 
-numpy==1.18.5
+numpy==1.22.0
 
 pandas==1.0.4
 pandas-datareader==0.8.1
